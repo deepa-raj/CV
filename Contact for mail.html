@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>contact for the refernce of mail </title>
+  </head>
+  <body>
+    <h1 >Here we would see how the page will lead to mail instead of getting back to the index.html page after hitting submit</h1>
+    <form  action="mailto:raideepa938@gmail.com" method="post" enctype="text/plain">
+      <!--It is used to be <strong>"<form class="" action="mailto:raideepa938@gmail.com" method="post"></strong>
+      and there are slight changes should be done so first delete this class and
+      add another attribute called ENCODING TYPE i.e. (enctype),
+      and this specifies just as up like were's specifiying
+      that our website is encoded in UTF-8
+      and we are going to say that the data in our form is encoded in plain text" -->
+      <label>Your name:</label>
+      <input type="text" name="yourname" value="">
+<!--Here what we need to add is a value to each of these name attribute,
+because that's going to identify the data that's inside each of these inputs. because it does some basic validation.
+that means if we type something in our email input and try to hit enter it checks whether
+the @ symbol and other things are correctly entered,it passes those basic validation checks,
+but we got all of those validation checks for free just by changing our input type to email,
+After we entered the message and submit button it'll lead us the mail page again and we can see now
+that we've added something to that name attribute where it said yourname,yourEmail, yourMessage,
+that what we added to the below inputs,now when we submit our form and we post this data
+that the users inputted to our mail client ,then it knows how to classify each bit of the data,
+i.e. name input should be labelled your name, email input should be labelled your email and likewise
+message input will do -->      <br>
+      <br>
+      <label>Type your Gmail id :</label>
+      <input type="email" name="yourEmail" value=""> <br>
+      <br><br>
+      <label>your message:</label>
+      <textarea name="yourMessage" rows="10" cols="30"></textarea><br><br>
+      <input type="submit" name="" >
+
+    </form>
+  </body>
+</html>
